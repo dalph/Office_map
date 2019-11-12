@@ -23,12 +23,12 @@ class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <p>
-                        Здесь будет какая-то шапка {this.state.placeId}
+                        Здесь будет какая-то шапка
                     </p>
                 </header>
                 <div className="body">
                     <MapComp onPlace={(e) => {
-                        this.setState({placeId: e.target.dataset.placeid})
+                        this.setState({placeId: e.target.dataset.placeid});
                         console.log(e.target.dataset.placeid);
                     }
                     }/>
