@@ -45,3 +45,16 @@ body {
 .active {
   background-color: red;
 }
+
+.map svg circle:hover {
+  fill: red;
+}
+
+.card {
+  width: 30%;
+  background-color: #192B33;
+  color: white;
+}
+.card li {
+  list-style-type: none;
+}

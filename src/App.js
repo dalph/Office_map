@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import UsersComp from "./UsersComp";
-import MapComp from "./MapComp";
-
+import MapComp from './MapComp'
+import PeopleCard from "./PeopleCard";
 
 let dict = {
     1: 1,
@@ -32,7 +32,8 @@ class App extends React.Component {
                         console.log(e.target.dataset.placeid);
                     }
                     }/>
-                    <UsersComp selectedPlace={dict[this.state.placeId]}/>
+                    {/*<UsersComp selectedPlace={dict[this.state.placeId]}/>*/}
+                    <PeopleCard/>
                 </div>
             </div>
 
