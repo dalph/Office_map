@@ -12,13 +12,13 @@ let dict = {
     5: null,
 };
 
-
 class App extends React.Component {
     state = {
         placeId: null
     };
 
     render() {
+        console.log('App props', this.props)
         return (
             <div className="App">
                 <header className="App-header">
@@ -33,7 +33,7 @@ class App extends React.Component {
                     }
                     }/>
                     {/*<UsersComp selectedPlace={dict[this.state.placeId]}/>*/}
-                    <PeopleCard/>
+                    <PeopleCard placeId={this.state.placeId}/>
                 </div>
             </div>
 
